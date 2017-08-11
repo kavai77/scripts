@@ -1,0 +1,4 @@
+Changing version in MVN
+-------------------------
+mvn org.codehaus.mojo:versions-maven-plugin:2.1:set -DnewVersion=
+find . -name pom.xml.versionsBackup -exec rm -f {} \;
