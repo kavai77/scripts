@@ -3,7 +3,7 @@ Changing version in MVN
 mvn org.codehaus.mojo:versions-maven-plugin:2.1:set -DnewVersion=
 find . -name pom.xml.versionsBackup -exec rm -f {} \;
 
-Find classes in jard
+Find classes in jars
 -----------------------
 find . -iname '*.jar' -printf "unzip -c %p | grep -q '${1}' && echo %p\n" | sh
  
